@@ -57,8 +57,14 @@ main {
   background-color: rgb(170, 170, 170);
   clip-path: polygon(20% 0%, 80% 0%, 100% 50%, 80% 100%, 20% 100%, 0% 50%);
 }
-#skillBarActive {
+.skillBarActive {
+  text-align: center;
+  width: 60px;
+  margin: auto;
+  height: 20px;
+  /* border: 1px solid red; */
   background-color: rgb(64, 157, 233);
+  clip-path: polygon(20% 0%, 80% 0%, 100% 50%, 80% 100%, 20% 100%, 0% 50%);
 }
 #skills table {
   border-spacing: 5px;
