@@ -64,7 +64,6 @@ main {
   height: 100%;
   clip-path: polygon(50% 50%, 50% 50%, 100% 0, 0 0);
   background-image: url("bgpics/rocks.png");
-  background-color: green;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 49%;
@@ -84,7 +83,6 @@ main {
   width: 100vw;
   height: 100%;
   background-image: url("bgpics/forest.png");
-  background-color: red;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 49%;
@@ -105,7 +103,6 @@ main {
   width: 100vw;
   height: 100%;
   background-image: url("bgpics/fire.png");
-  background-color: blue;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 49%;
@@ -124,7 +121,6 @@ main {
   z-index: 1;
   position: absolute;
   background-image: url(bgpics/cold.jpg);
-  background-color: yellow;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 25%;
