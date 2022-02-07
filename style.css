@@ -27,6 +27,35 @@ main {
   padding: 0;
   margin: 0px;
 }
+#welcomeBottomName {
+  position: absolute;
+  top: 52vh;
+  left: 45vw;
+  font-size: 32px;
+  pointer-events: none;
+}
+#welcomeTopName {
+  position: absolute;
+  top: 33vh;
+  left: 43vw;
+  pointer-events: none;
+  font-size: 32px;
+}
+#welcomeRightName {
+  position: absolute;
+  top: 44vh;
+  left: 55vw;
+  pointer-events: none;
+  font-size: 32px;
+}
+#welcomeLeftName {
+  position: absolute;
+  top: 44vh;
+  left: 35vw;
+  pointer-events: none;
+  font-size: 32px;
+}
+
 #top {
   display: flex;
   z-index: 1;
