@@ -27,15 +27,15 @@
 // window.onresize = resize;
 // let menuHidden = false;
 
-function resize() {
-  var desktop = window.matchMedia("(min-width: 768px)");
-  var mobile = window.matchMedia("(max-width: 767px)");
-  if (menuHidden && desktop.matches) {
-    showMenu();
-  } else if (menuHidden === false && mobile.matches) {
-    hideMenu();
-  }
-}
+// function resize() {
+//   var desktop = window.matchMedia("(min-width: 768px)");
+//   var mobile = window.matchMedia("(max-width: 767px)");
+//   if (menuHidden && desktop.matches) {
+//     showMenu();
+//   } else if (menuHidden === false && mobile.matches) {
+//     hideMenu();
+//   }
+// }
 let topExpanded = false;
 let topShrinked = false;
 let BottomExpanded = false;
@@ -43,26 +43,42 @@ let bottomShrinked = false;
 let mainAnimationFinished = true;
 
 function fadeInTopText(){
-  document.getElementById("topText").style.animation = "fadeIn 2s forwards";;
-  document.getElementById("topName").style.animation = "fadeIn 2s forwards";;
-  document.getElementById("topLink").style.animation = "fadeIn 2s forwards";;
+  document.getElementById("topText").style.animation = "fadeIn 2s forwards";
+  document.getElementById("topName").style.animation = "fadeIn 2s forwards";
+  document.getElementById("topLink").style.animation = "fadeIn 2s forwards";
+  document.getElementById("topText").style.pointerEvents = "auto";
+  document.getElementById("topName").style.pointerEvents = "auto";
+  document.getElementById("topLink").style.pointerEvents = "auto";
+  document.getElementById("allTopText").style.backgroundColor = "rgba(0,0,0,0.25)";
 }
 function fadeOutTopText(){
-  document.getElementById("topText").style.animation = "fadeOut 2s forwards";;
-  document.getElementById("topName").style.animation = "fadeOut 2s forwards";;
-  document.getElementById("topLink").style.animation = "fadeOut 2s forwards";;
+  document.getElementById("topText").style.animation = "fadeOut 2s forwards";
+  document.getElementById("topName").style.animation = "fadeOut 2s forwards";
+  document.getElementById("topLink").style.animation = "fadeOut 2s forwards";
+  document.getElementById("topText").style.pointerEvents = "none";
+  document.getElementById("topName").style.pointerEvents = "none";
+  document.getElementById("topLink").style.pointerEvents = "none";
+  document.getElementById("allTopText").style.backgroundColor = "rgba(0,0,0,0)";
 }
 function fadeInBottomText(){
-  document.getElementById("bottomText").style.animation = "fadeIn 2s forwards";;
-  document.getElementById("bottomName").style.animation = "fadeIn 2s forwards";;
-  document.getElementById("bottomLink").style.animation = "fadeIn 2s forwards";;
+  document.getElementById("bottomText").style.animation = "fadeIn 2s forwards";
+  document.getElementById("bottomName").style.animation = "fadeIn 2s forwards";
+  document.getElementById("bottomLink").style.animation = "fadeIn 2s forwards";
+  document.getElementById("bottomText").style.pointerEvents = "auto";
+  document.getElementById("bottomName").style.pointerEvents = "auto";
+  document.getElementById("bottomLink").style.pointerEvents = "auto";
+  document.getElementById("allBottomText").style.backgroundColor = "rgba(0,0,0,0.25)";
 }
 function fadeOutBottomText(){
-  document.getElementById("bottomText").style.animation = "fadeOut 2s forwards";;
-  document.getElementById("bottomName").style.animation = "fadeOut 2s forwards";;
-  document.getElementById("bottomLink").style.animation = "fadeOut 2s forwards";;
+  document.getElementById("bottomText").style.animation = "fadeOut 2s forwards";
+  document.getElementById("bottomName").style.animation = "fadeOut 2s forwards";
+  document.getElementById("bottomLink").style.animation = "fadeOut 2s forwards";
+  document.getElementById("bottomText").style.pointerEvents = "none";
+  document.getElementById("bottomName").style.pointerEvents = "none";
+  document.getElementById("bottomLink").style.pointerEvents = "none";
+  document.getElementById("allBottomText").style.backgroundColor = "rgba(0,0,0,0)";
 }
-function toggleTop(e) {
+function toggleTop() {
   // alert("I am an alert box!");
   let top = document.getElementById("top");
   let bottom = document.getElementById("bottom");

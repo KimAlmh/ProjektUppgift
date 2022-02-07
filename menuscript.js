@@ -26,3 +26,13 @@ function menuToggle() {
   }
   window.onresize = resize;
   var menuHidden = false;
+  
+  function resize() {
+    var desktop = window.matchMedia("(min-width: 768px)");
+    var mobile = window.matchMedia("(max-width: 767px)");
+    if (menuHidden && desktop.matches) {
+      showMenu();
+    } else if (menuHidden === false && mobile.matches) {
+      hideMenu();
+    }
+  }

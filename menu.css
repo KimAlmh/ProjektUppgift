@@ -1,61 +1,63 @@
 #navIcon {
-    width: 3em;
-    -webkit-filter: drop-shadow(1px 1px 0 gray) drop-shadow(-1px 1px 0 gray)
-      drop-shadow(1px -1px 0 gray) drop-shadow(-1px -1px 0 gray);
-    filter: drop-shadow(1px 1px 0 gray) drop-shadow(-1px 1px 0 gray)
-      drop-shadow(1px -1px 0 gray) drop-shadow(-1px -1px 0 gray);
-  }
-  #menu {
-    padding: 5px 15px;
-  }
-  #topNav {
-    display: flex;
-    flex-direction: column;
-    z-index: 3;
-    margin: 0;
-    background-color: transparent;
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
-  .icon {
-    padding: 0 0 5px 5px;
-  }
-  #links a:hover {
-    background-color: rgba(77, 77, 77);
-  }
+  width: 3em;
+  -webkit-filter: drop-shadow(1px 1px 0 gray) drop-shadow(-1px 1px 0 gray)
+    drop-shadow(1px -1px 0 gray) drop-shadow(-1px -1px 0 gray);
+  filter: drop-shadow(1px 1px 0 gray) drop-shadow(-1px 1px 0 gray)
+    drop-shadow(1px -1px 0 gray) drop-shadow(-1px -1px 0 gray);
+}
+#menu {
+  padding: 5px 15px;
+}
+#topNav {
+  display: flex;
+  flex-direction: column;
+  z-index: 4;
+  margin: 0;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.icon {
+  padding: 0 0 5px 5px;
+}
+#links a:hover {
+  background-color: rgba(77, 77, 77);
+}
 
+#topNav #links {
+  display: none;
+  flex-direction: column;
+  font-size: 28px;
+}
+#links a {
+  border: solid #222 1px;
+}
+#topNav a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+}
+@media only screen and (min-width: 768px) {
   #topNav #links {
-    display: none;
-    flex-direction: column;
-    font-size: 28px;
+    display: flex;
+    width: 100vw;
+    background-color: #111;
+    flex-direction: row;
+    justify-content: space-around;
+    /* margin-bottom: 53px; */
   }
   #links a {
-    border: solid #222 1px;
+    border: none;
   }
-  #topNav a {
-    text-decoration: none;
-    color: white;
-    padding: 10px 15px;
+  body {
   }
-  @media only screen and (min-width: 768px) {
-    #topNav #links {
-      display: flex;
-      width: 100vw;
-      background-color: #111;
-      flex-direction: row;
-      justify-content: space-around;
-    }
-    #links a {
-      border: none;
-    }
-    body {}
-    #menu {
-      display: none;
-    }
-    #links {
-      width: 100vw;
-      display: flex;
-      align-items: center;
-    }
+  #menu {
+    display: none;
   }
+  #links {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+  }
+}
