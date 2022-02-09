@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+
+       /* Nanbar */
+#navIcon {
+  width: 3em;
+  -webkit-filter: drop-shadow(1px 1px 0 gray) drop-shadow(-1px 1px 0 gray)
+   drop-shadow(1px -1px 0 gray) drop-shadow(-1px -1px 0 gray);
+  filter: drop-shadow(1px 1px 0 gray) drop-shadow(-1px 1px 0 gray)
+   drop-shadow(1px -1px 0 gray) drop-shadow(-1px -1px 0 gray);
+  }
+  #menu {
+    padding: 5px 15px;
+  }
+  #topNav {
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    margin: 0;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .icon {
+    padding: 0 0 5px 5px;
+  }
+  #links a:hover {
+    background-color: rgba(77, 77, 77);
+  }
+
+  #topNav #links {
+    display: none;
+    flex-direction: column;
+    font-size: 28px;
+  }
+  #links a {
+    border: solid #222 1px;
+  }
+  #topNav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+  }
+  
+
+    /* Huvud secktion */
+
+section {
+    padding: 100px 200px;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(bgpics/setragBG.jpg) no-repeat; 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.main h2 {
+  color: #fff;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+.main h2 span {
+  color: #fff;
+  font-size: 3em;
+  font-weight: 700;
+  display: inline-block;
+  margin-top: 10px;
+}
+.main h3 {
+  color: #3a6cf4;
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.social-icons a {
+  color: rgb(255, 81, 0);
+  font-size: 1.7em;
+  padding-right: 30px;
+}
+
+
+        /* OM sektion*/
+
+
+.about {
+  /* background-color: rgb(253, 253, 47); */
+  background-color: #0a7aca;
+}
+.about .title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+.text {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.5em;
+}
+.about a {
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(255, 81, 0);
+  font-size: 0.8em;
+  font-weight: 600;
+  display: inline-block;
+  letter-spacing: 1px;
+  border-radius: 15px;
+  margin-top: 20px;
+  padding: 0.9375em 2.1875em;
+}
+
+       /* Kunskaper sektion*/
+
+/* .skills {
+  background-color: #0a7aca;
+} */
+
+.skills .title{
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.details{
+  width: 100%;
+  display: flex;  
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.bar{
+  position: relative;
+
+  border: 2px solid #0d96e0;
+
+  border-radius: 20px;
+
+}
+.bar div{
+  position: relative;
+  width: 0;
+  height: 9px;
+  border-radius: 10px;
+  background-color: #0d96e0;
+
+
+}
+
+#html-bar{
+  animation: html-fill 2s forwards;
+}
+@keyframes html-fill{
+  100%{
+      width: 50%;
+  }
+}
+#css-bar{
+  animation: css-fill 2s forwards;
+}
+@keyframes css-fill{
+  100%{
+      width: 20%;
+  }
+}
+#javascript-bar{
+  animation: js-fill 2s forwards;
+}
+@keyframes js-fill {
+  100%{
+      width: 10%;
+  }
+}
+#jQuery-bar{
+  animation: jQuery-fill 2s forwards;
+}
+@keyframes jQuery-fill{
+  100%{
+      width: 58%;
+  }
+} 
+#SQL-bar{
+  animation: SQL-fill 2s forwards;
+}
+@keyframes SQL-fill{
+  100%{
+      width: 30%;
+  }
+} 
+
+
+   /* footer */
+
+footer {
+  background: #111;
+  padding: 20px 23px;
+  text-align: center;
+}   
+footer span a {
+  color: crimson;
+  text-decoration: none;
+}
+footer span a:hover {
+  text-decoration: underline;
+}
+footer span {
+  color: #fff;
+}
+
+
+@media only screen and (min-width: 768px) {
+  #topNav #links {
+    display: flex;
+    width: 100vw;
+    background-color: #111;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #links a {
+    border: none;
+  }
+  
+  #menu {
+    display: none;
+  }
+  #links {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width:1023px){
+  section {
+    padding: 80px 20px;
+  }
+
+  .main.content h2 {
+    font-size: 1em;
+  }
+
+  .main.content h3 {
+    font-size: 1.6em;
+  }
+}
+
+@media (max-width:641px){
+  body {
+    font-size: 12px;
+  }
+
+  .main.content h2 {
+    font-size: 0.8em;
+  }
+
+  .main.content h3 {
+    font-size: 1.4em;
+  }
+
+}
+
+@media (max-width: 300px){
+  body {
+    font-size: 10px;
+  }
+}
+  

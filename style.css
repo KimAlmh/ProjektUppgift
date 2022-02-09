@@ -13,45 +13,57 @@ main {
   color: #eee;
   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
   z-index: 3;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  text-align: center;
   width: 100%;
+  height: calc(100% - 53px);
   /* height: 5em; */
   position: absolute;
   /* padding: 1px; */
   /* margin: 1px; */
   margin-top: 5%;
+  pointer-events: none;
 }
-#welcome h3, #welcome h2{
+#welcome h3,
+#welcome h2 {
   padding: 0;
   margin: 0px;
 }
 #welcomeBottomName {
-  position: absolute;
-  top: 52vh;
-  left: 45vw;
+  position: fixed;
+  margin: auto;
+  bottom: 25%;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 32px;
   pointer-events: none;
 }
 #welcomeTopName {
-  position: absolute;
-  top: 33vh;
-  left: 43vw;
+  position: fixed;
+  margin: auto;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
   pointer-events: none;
   font-size: 32px;
 }
 #welcomeRightName {
-  position: absolute;
-  top: 44vh;
-  left: 55vw;
+  position: fixed;
+  margin: auto;
+  top: calc(50%);
+  right: 15%;
+  transform: translateY(-15%);
   pointer-events: none;
   font-size: 32px;
 }
 #welcomeLeftName {
-  position: absolute;
-  top: 44vh;
-  left: 35vw;
+  position: fixed;
+  margin: auto;
+  top: 50%;
+  left: 15%;
+  transform: translateY(-15%);
   pointer-events: none;
   font-size: 32px;
 }
@@ -73,7 +85,9 @@ main {
   justify-content: center;
   align-items: center;
 }
-#top:hover, #top:focus, #top:active{
+#top:hover,
+#top:focus,
+#top:active {
   opacity: 100%;
 }
 #left {
@@ -93,7 +107,9 @@ main {
   align-items: center;
   clip-path: polygon(0 100%, 0 0, 50% 50%, 50% 50%);
 }
-#left:hover, #left:focus, #left:active{
+#left:hover,
+#left:focus,
+#left:active {
   opacity: 100%;
 }
 #right {
@@ -113,7 +129,9 @@ main {
   align-items: center;
   clip-path: polygon(50% 50%, 50% 50%, 100% 0, 100% 100%);
 }
-#right:hover, #right:focus, #right:active{
+#right:hover,
+#right:focus,
+#right:active {
   opacity: 100%;
 }
 #bottom {
@@ -133,11 +151,12 @@ main {
   justify-content: center;
   align-items: center;
 }
-#bottom:hover, #bottom:focus, #bottom:active{
+#bottom:hover,
+#bottom:focus,
+#bottom:active {
   opacity: 100%;
 }
 .text {
-
   display: flex;
   flex-direction: column;
   /* position: absolute; */
@@ -154,7 +173,9 @@ main {
   pointer-events: none;
   user-select: none;
 }
-.text p, .text a, .text h1 {
+.text p,
+.text a,
+.text h1 {
   color: #fff;
   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
   padding: 12px;
@@ -162,23 +183,21 @@ main {
   opacity: 0;
 }
 .text a {
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  width: fit-content;
-  border: solid 1px red;
+  text-align: center;
+  width: inherit;
   margin: 0;
   padding: 0;
-  margin-top: 15px;
-  margin-bottom: 5px;
+  padding-top: 15px;
+  padding-bottom: 5px;
   font-size: 20px;
   color: lightskyblue;
+  background-color: rgb(255, 255, 255);
   text-shadow: 1px 0 0 #222, 0 -1px 0 #222, 0 1px 0 #222, -1px 0 0 #222;
 }
 .text h1 {
   text-align: center;
 }
-.text p{
+.text p {
   opacity: 0;
   font-size: 20px;
 }
@@ -190,48 +209,88 @@ main {
 }
 
 @keyframes topExpand {
-  0% { clip-path: polygon(50% 50%, 50% 50%, 100% 0, 0 0); }
-  100% { clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0); }
+  0% {
+    clip-path: polygon(50% 50%, 50% 50%, 100% 0, 0 0);
+  }
+  100% {
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+  }
 }
 @keyframes topShrink {
-  0% { clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0); }
-  100% { clip-path: polygon(50% 50%, 50% 50%, 100% 0, 0 0); }
+  0% {
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+  }
+  100% {
+    clip-path: polygon(50% 50%, 50% 50%, 100% 0, 0 0);
+  }
 }
 
 @keyframes leftExpand {
-  0% { clip-path: polygon(0 100%, 0 0, 50% 50%, 50% 50%); }
-  100% { clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%); }
+  0% {
+    clip-path: polygon(0 100%, 0 0, 50% 50%, 50% 50%);
+  }
+  100% {
+    clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%);
+  }
 }
 @keyframes leftShrink {
-  0% { clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%); }
-  100% { clip-path: polygon(0 100%, 0 0, 50% 50%, 50% 50%); }
+  0% {
+    clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%);
+  }
+  100% {
+    clip-path: polygon(0 100%, 0 0, 50% 50%, 50% 50%);
+  }
 }
 
 @keyframes rightExpand {
-  0% { clip-path: polygon(50% 50%, 50% 50%, 100% 0, 100% 100%); }
-  100% { clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%); }
+  0% {
+    clip-path: polygon(50% 50%, 50% 50%, 100% 0, 100% 100%);
+  }
+  100% {
+    clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%);
+  }
 }
 @keyframes rightShrink {
-  0% { clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%); }
-  100% { clip-path: polygon(50% 50%, 50% 50%, 100% 0, 100% 100%); }
+  0% {
+    clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%);
+  }
+  100% {
+    clip-path: polygon(50% 50%, 50% 50%, 100% 0, 100% 100%);
+  }
 }
 
 @keyframes bottomExpand {
-  0% { clip-path: polygon(0 100%, 50% 50%, 50% 50%, 100% 100%); }
-  100% { clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%); }
+  0% {
+    clip-path: polygon(0 100%, 50% 50%, 50% 50%, 100% 100%);
+  }
+  100% {
+    clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%);
+  }
 }
 @keyframes bottomShrink {
-  0% { clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%); }
-  100% { clip-path: polygon(0 100%, 50% 50%, 50% 50%, 100% 100%); }
+  0% {
+    clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%);
+  }
+  100% {
+    clip-path: polygon(0 100%, 50% 50%, 50% 50%, 100% 100%);
+  }
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @keyframes fadeOut {
-  0% { opacity: 1; }
-  100% { opacity: 0; }
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 @media only screen and (min-width: 480px) {
@@ -240,20 +299,19 @@ main {
   #welcome {
     margin-top: 53px;
   }
-  #top, #left, #right, #bottom {
+  #top,
+  #left,
+  #right,
+  #bottom {
     margin-top: 53px;
     height: calc(100% - 53px);
   }
   main {
     height: calc(100% - 53px);
   }
-  
   .text {
     max-height: 80%;
   }
-  
 }
 @media only screen and (min-width: 1000px) {
-  
 }
-

@@ -10,7 +10,7 @@ function fadeInText(parent) {
   children.forEach((element) => {
     element.style.animation = "fadeIn 2s forwards";
     element.style.pointerEvents = "auto";
-    element.style.backgroundColor = "rgba(0,0,0,0.25)";
+    element.style.backgroundColor = "rgba(0,0,0,0.65)";
   });
 }
 function fadeOutText(parent) {
@@ -43,14 +43,14 @@ function toggleTop() {
   } else if (mainAnimationFinished) {
     topExpanded = false;
 
-    top.style.animation = "topShrink 2s forwards";
+    top.style.animation = "topShrink 1s forwards";
     fadeOutText(document.getElementById("allTopText"));
     welcome.style.animation = "fadeIn 2s forwards";
 
     setTimeout(function () {
       top.style.zIndex = "1";
       top.blur();
-    }, 2000);
+    }, 1000);
   }
 }
 
@@ -73,14 +73,14 @@ function toggleBottom() {
     welcome.style.animation = "fadeOut 1s forwards";
   } else if (mainAnimationFinished) {
     bottomExpanded = false;
-    bottom.style.animation = "bottomShrink 2s forwards";
+    bottom.style.animation = "bottomShrink 1s forwards";
     fadeOutText(document.getElementById("allBottomText"));
     welcome.style.animation = "fadeIn 2s forwards";
 
     setTimeout(function () {
       bottom.style.zIndex = "1";
       bottom.blur();
-    }, 2000);
+    }, 1000);
   }
 }
 
@@ -103,14 +103,14 @@ function toggleLeft() {
     welcome.style.animation = "fadeOut 1s forwards";
   } else if (mainAnimationFinished) {
     leftExpanded = false;
-    left.style.animation = "leftShrink 2s forwards";
+    left.style.animation = "leftShrink 1s forwards";
     fadeOutText(document.getElementById("allLeftText"));
     welcome.style.animation = "fadeIn 2s forwards";
 
     setTimeout(function () {
       left.style.zIndex = "1";
       left.blur();
-    }, 2000);
+    }, 1000);
   }
 }
 
@@ -133,14 +133,14 @@ function toggleRight() {
     welcome.style.animation = "fadeOut 1s forwards";
   } else if (mainAnimationFinished) {
     rightExpanded = false;
-    right.style.animation = "rightShrink 2s forwards";
+    right.style.animation = "rightShrink 1s forwards";
     fadeOutText(document.getElementById("allRightText"));
     welcome.style.animation = "fadeIn 2s forwards";
 
     setTimeout(function () {
       right.style.zIndex = "1";
       right.blur();
-    }, 2000);
+    }, 1000);
   }
 }
 
