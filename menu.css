@@ -17,6 +17,10 @@
   position: fixed;
   top: 0;
   left: 0;
+  
+}
+#topNav * {
+  font-family: 'Times New Roman', Times, serif;
 }
 .icon {
   padding: 0 0 5px 5px;
