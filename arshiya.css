@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: url(bgpics/burningwood.jpg) no-repeat;
+  background-size: cover;
+}
+
+.info {
+  width: 90%;
+  background: rgba(61, 60, 60, 0.4);
+  padding: 40px;
+  text-align: center;
+  margin: auto;
+  margin-top: 5%;
+  color: white;
+}
+.info-img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.info h1 {
+  font-size: 45px;
+  letter-spacing: 5px;
+  font-weight: 100;
+}
+.info h5 {
+  font-size: 25px;
+  letter-spacing: 4px;
+  font-weight: 100;
+}
+.info p {
+  text-align: justify;
+}
+
+.skill {
+  width: 100%;
+  background-color: rgb(61, 60, 60);
+}
+
+.skills {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+}
+
+.html {
+  width: 60%;
+  background-color: #fc4f4f;
+}
+.css {
+  width: 55%;
+  background-color: #ff6b6b;
+}
+.js {
+  width: 25%;
+  background-color: #ff7d7d;
+}
+.php {
+  width: 20%;
+  background-color: #fd8e8e;
+}
+
+.svenska {
+  width: 80%;
+  background-color: #ff4b4b;
+}
+.Engelska {
+  width: 80%;
+  background-color: #ff4b4b;
+}
+
+@media only screen and (min-width: 1000px) {
+  .info {
+    width: 850px;
+  }
+}

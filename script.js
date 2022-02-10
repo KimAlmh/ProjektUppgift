@@ -143,11 +143,3 @@ function toggleRight() {
     }, 1000);
   }
 }
-
-function test() {
-  let top = document.getElementById("top");
-  let bottom = document.getElementById("bottom");
-  let text = document.getElementById("topText");
-
-  text.scrollBy(0, 0);
-}

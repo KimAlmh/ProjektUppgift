@@ -8,42 +8,46 @@ main {
   width: 100%;
   height: 100%;
   background-color: #f2f2f2;
+  
+}
+#open {
+  width: 100%;
+  height: 80vh;
+  background-image: url(bgpics/openCold.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: 50%;
+  margin-bottom: 10px;
 }
 #title {
-  width: 100%;
-  text-align: center;
+  display: flex;
+  height: inherit;
+  margin: auto;
+  color: #eee;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+}
+#title #role {
+  margin-left: 35px;
+  margin-top: -10px;
 }
 #mainInfo {
-  /* display: flex; */
-  /* flex-direction: column; */
   order: 2;
   font-size: 22px;
   padding: 10px;
-  /* width: calc(100% - 400px); */
   margin-left: 10px;
 }
-#topPic {
-  height: 200px;
-  /* display: flex; */
-  /* margin-left: -50px; */
-  width: 100%;
-  padding: 0px;
-  margin: 0px;
-  margin-left: -5px;
-  /* margin: auto; */
-  /* align-items: center; */
-}
 #skills {
-  /* display: flex; */
-  /* flex-direction: column; */
-
   align-items: center;
   order: 1;
   width: fit-content;
   height: fit-content;
-  border: 2px solid lightblue;
+  border: 2px solid rgb(187, 187, 187);
   padding: 5px;
-  background-color: rgb(208, 235, 235);
+  background-color: rgb(215, 219, 219);
   margin: auto;
   margin-top: 5px;
   margin-bottom: 25px;
@@ -53,7 +57,6 @@ main {
   width: 60px;
   margin: auto;
   height: 20px;
-  /* border: 1px solid red; */
   background-color: rgb(170, 170, 170);
   clip-path: polygon(20% 0%, 80% 0%, 100% 50%, 80% 100%, 20% 100%, 0% 50%);
 }
@@ -62,7 +65,6 @@ main {
   width: 60px;
   margin: auto;
   height: 20px;
-  /* border: 1px solid red; */
   background-color: rgb(64, 157, 233);
   clip-path: polygon(20% 0%, 80% 0%, 100% 50%, 80% 100%, 20% 100%, 0% 50%);
 }
@@ -113,19 +115,11 @@ main {
     margin: 0;
     margin-left: 100px;
   }
-  #topPic {
-    display: flex;
-    height: 200px;
-    width: 80%;
-    margin: auto;
-  }
   #skills {
     order: 2;
-    border: 2px solid lightblue;
     padding: 20px;
   }
   #title {
-      text-align: left;
-      margin-left: 220px;
+    font-size: larger;
   }
 }

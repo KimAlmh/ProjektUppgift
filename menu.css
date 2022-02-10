@@ -17,10 +17,9 @@
   position: fixed;
   top: 0;
   left: 0;
-  
 }
 #topNav * {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 .icon {
   padding: 0 0 5px 5px;
@@ -49,12 +48,9 @@
     background-color: #111;
     flex-direction: row;
     justify-content: space-around;
-    /* margin-bottom: 53px; */
   }
   #links a {
     border: none;
-  }
-  body {
   }
   #menu {
     display: none;
