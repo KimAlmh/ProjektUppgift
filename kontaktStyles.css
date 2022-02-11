@@ -114,7 +114,8 @@ body {
 .contact-form .second-container form button {
   width: 200px;
   height: 50px;
-  background: #00ad5f;
+  background: gray;
+  pointer-events: none;
   color: #fff;
   font-size: 17px;
   font-weight: 600;

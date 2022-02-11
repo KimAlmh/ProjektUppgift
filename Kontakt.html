@@ -44,7 +44,7 @@
         </div>
         <div class="second-container">
           <h2>Kontakta Oss</h2>
-          <form>
+          <form  onsubmit="return validateSubmit();">
             <div class="form-group">
               <label for="name-input">Ange ditt namn*</label>
               <input type="text" id="name-input" placeholder="Förnamn" required/>
@@ -81,7 +81,7 @@
               <input type="checkbox" id="villkor" required/> Jag godkänner villkoren
               <br /><br />
             </div>
-            <button>Skicka in</button>
+            <button id="submit">Skicka in</button>
           </form>
         </div>
       </div>
