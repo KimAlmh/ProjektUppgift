@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="kontaktStyles.css" />
     <link rel="stylesheet" href="menu.css" />
     <script type="text/javascript" src="menuscript.js"></script>
+    <script type="text/javascript" src="kontakt.js"></script>
     <title>Kontaka Oss</title>
   </head>
   <body>
@@ -18,7 +19,7 @@
         <div id="links">
           <a href="index.html">Om oss</a>
           <a href="portfolio.html">Portfolio</a>
-          <a href="javascript:void">Kontakta oss</a>
+          <a href="javascript:void" onclick="test()">Kontakta oss</a>
         </div>
       </nav>
     </header>
@@ -49,12 +50,13 @@
               <input type="text" id="name-input" placeholder="Förnamn" required/>
               <input type="text" placeholder="Efternamn" required/>
             </div>
-            <div class="form-group">
-              <label for="email-input">Ange din e-postadress*</label>
+            <div class="form-group" id="emailContainer">
+              <label for="emailInput">Ange din e-postadress*</label>
               <input
                 type="text"
-                id="email-input"
+                id="email"
                 placeholder="exempel@gmail.com"
+                oninput="validateEmail();"
                 required
               />
             </div>
