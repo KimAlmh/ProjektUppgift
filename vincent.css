@@ -22,7 +22,7 @@ section {
 
 .main h2 {
   color: #fff;
-  font-size: 2;
+  font-size: 2em;
   font-weight: 500;
 }
 .main h2 span {
@@ -143,28 +143,6 @@ footer span a:hover {
 }
 footer span {
   color: #fff;
-}
-
-@media only screen and (min-width: 768px) {
-  #topNav #links {
-    display: flex;
-    width: 100vw;
-    background-color: crimson;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  #links a {
-    border: none;
-  }
-
-  #menu {
-    display: none;
-  }
-  #links {
-    width: 100vw;
-    display: flex;
-    align-items: center;
-  }
 }
 
 @media (max-width: 1023px) {

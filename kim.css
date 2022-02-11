@@ -7,7 +7,7 @@ main {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  background-color: #f2f2f2;
+  background-color: #0d96e0;
   
 }
 #open {
@@ -27,7 +27,6 @@ main {
   color: #eee;
   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
   align-items: center;
-  /* justify-content: center; */
   flex-direction: column;
 }
 #title #role {
@@ -38,16 +37,17 @@ main {
   order: 2;
   font-size: 22px;
   padding: 10px;
-  margin-left: 10px;
+  padding-left: 20px;
+  background-color: #fefefe;
 }
 #skills {
   align-items: center;
   order: 1;
   width: fit-content;
   height: fit-content;
-  border: 2px solid rgb(187, 187, 187);
+  border: 1px solid rgb(187, 187, 187);
   padding: 5px;
-  background-color: rgb(215, 219, 219);
+  background-color: #eeeeee;
   margin: auto;
   margin-top: 5px;
   margin-bottom: 25px;
@@ -101,6 +101,7 @@ main {
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
+    background-color: #fff;
   }
   #mainInfo {
     margin: 0 50px;
@@ -109,15 +110,22 @@ main {
 @media only screen and (min-width: 1000px) {
   main {
     row-gap: 0px;
+    background-color: #0d96e0;
+  }
+  #open {
+    margin-bottom: 0;
   }
   #mainInfo {
     width: calc(100% - 500px);
     margin: 0;
-    margin-left: 100px;
+    padding-left: 100px;
+    padding-right: 55px;
+    background-color: #fefefe;
   }
   #skills {
     order: 2;
-    padding: 20px;
+    margin: 0 auto;
+    margin-top: 25px;
   }
   #title {
     font-size: larger;

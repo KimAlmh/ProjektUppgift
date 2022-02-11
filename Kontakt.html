@@ -18,7 +18,7 @@
         <div id="links">
           <a href="index.html">Om oss</a>
           <a href="portfolio.html">Portfolio</a>
-          <a href="Kontakt.html">Kontakta oss</a>
+          <a href="javascript:void">Kontakta oss</a>
         </div>
       </nav>
     </header>
@@ -46,8 +46,8 @@
           <form>
             <div class="form-group">
               <label for="name-input">Ange ditt namn*</label>
-              <input type="text" id="name-input" placeholder="Förnamn" />
-              <input type="text" placeholder="Efternamn" />
+              <input type="text" id="name-input" placeholder="Förnamn" required/>
+              <input type="text" placeholder="Efternamn" required/>
             </div>
             <div class="form-group">
               <label for="email-input">Ange din e-postadress*</label>
@@ -55,6 +55,7 @@
                 type="text"
                 id="email-input"
                 placeholder="exempel@gmail.com"
+                required
               />
             </div>
             <div class="form-group">
@@ -63,6 +64,7 @@
                 type="text"
                 id="phone-input"
                 placeholder="(+46) 123-456789 "
+                required
               />
             </div>
 
@@ -74,7 +76,7 @@
               ></textarea>
             </div>
             <div>
-              <input type="checkbox" id="villkor" /> Jag godkänner villkoren
+              <input type="checkbox" id="villkor" required/> Jag godkänner villkoren
               <br /><br />
             </div>
             <button>Skicka in</button>
