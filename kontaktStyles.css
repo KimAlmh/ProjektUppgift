@@ -110,6 +110,15 @@ body {
   padding: 10px 20px;
   margin-top: -1px;
 }
+.contact-form .second-container form .form-group #emailError {
+  margin-top: -2px;
+  font-size: 14px;
+  display: none;
+  align-items: center;
+  border: none;
+  color: red;
+  text-transform: none;
+}
 
 .contact-form .second-container form button {
   width: 200px;
@@ -130,19 +139,19 @@ body {
 }
 
 @media screen and (max-width: 700px) {
-    .contact-form {
-        flex-direction: column-reverse;
-    }
-    .contact-form > * {
-        width: 100%;
-    }
-    .contact-form .second-container {
-        padding: 40px 0;
-    }
+  .contact-form {
+    flex-direction: column-reverse;
+  }
+  .contact-form > * {
+    width: 100%;
+  }
+  .contact-form .second-container {
+    padding: 40px 0;
+  }
 }
 @media screen and (min-width: 1023px) {
   .contact-form {
-      margin-top: 25vh;
+    margin-top: 25vh;
     width: 90vw;
   }
 }
